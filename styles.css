@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+@import "compass/css3";
 
 *{
     margin: 0;
@@ -12,6 +13,70 @@ body {
     font-weight: 600;
     font-style: normal;
 }
+
+/* ------------ Clouds & Sun -------------- */
+.cloud, .cloud_two, .cloud_three, .cloud_four, .cloud_five, .cloud_six{
+    animation: move 7s ease infinite;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%; left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    background: #FFFFFF;
+    height: 60px; width: 60px;
+    box-shadow:
+		#FFFFFF 65px -15px 0 -5px,
+		#FFFFFF 25px -25px,
+		#FFFFFF 30px 10px,
+		#FFFFFF 60px 15px 0 -10px,
+		#FFFFFF 85px 5px 0 -5px;
+}
+
+.cloud_two {
+	top: 10%; left: 40%;
+    animation-duration: 8s;
+    height: 49px; width: 50px;
+}
+
+.cloud_three {
+	top: 8.5%; left: 90%;
+    animation-duration: 7s;
+    height: 50px; width: 50px;
+}
+
+.cloud_four {
+	top: 10%; left: 70%;
+    animation-duration: 9s;
+}
+
+.cloud_five{
+	top: 10%; left: 21%;
+    animation-duration: 8s;
+}
+
+.cloud_six {
+	top: 20%; left: 3%;
+    animation-duration: 9s;
+}
+
+
+@keyframes move{
+    50% { transform: translateY(-15px); }
+}
+
+.sun {
+    position: absolute;
+    right: 85%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    box-shadow:
+        0 0 35px 5px yellow,
+        0 0 25px 10px yellow inset;
+}
+
+/* ------------ Clouds & Sun -------------- */
 
 .container {
     width: 100%;
