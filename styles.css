@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playpen-Sans', Arial;
+}
+
+body {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to right, #ddd6f3, #faaca8);
+    background: linear-gradient(to right, #ddd6f3, #ffcdca);
     padding: 10px;
 }
 
@@ -50,7 +58,13 @@ input {
     outline: none;
     background: transparent;
     padding: 10px;
-    font-weight: 13px;
+}
+
+input#input-box {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
 button {
@@ -58,15 +72,22 @@ button {
     outline: none;
     padding: 16px 50px;
     background: #e5d5ec;
-    color: white;
-    font-size: 16px;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: bold;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 40px;
 }
 
 ul li {
     list-style: none;
-    font-size: 17px;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 580;
+    font-style: normal;
+    font-size: 15px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
